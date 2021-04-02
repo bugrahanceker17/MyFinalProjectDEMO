@@ -16,11 +16,11 @@ namespace DataAccess.Concrete.InMemory
         {
             _products = new List<Product>
             {
-                new Product{ ProductId=1, CategoryId=1, ProductName="Bardak", UnitPrice=15, UnitInStock=22 },
-                new Product{ ProductId=2, CategoryId=2, ProductName="Kitaplık", UnitPrice=125, UnitInStock=11 },
-                new Product{ ProductId=3, CategoryId=4, ProductName="Basketbol Topu", UnitPrice=60, UnitInStock=48 },
-                new Product{ ProductId=4, CategoryId=4, ProductName="Çatal bıçak seti", UnitPrice=90, UnitInStock=18 },
-                new Product{ ProductId=5, CategoryId=8, ProductName="Ütü Masası", UnitPrice=169, UnitInStock=8 }
+                new Product{ ProductId=1, CategoryId=1, ProductName="Bardak", UnitPrice=15, UnitsInStock=22 },
+                new Product{ ProductId=2, CategoryId=2, ProductName="Kitaplık", UnitPrice=125, UnitsInStock=11 },
+                new Product{ ProductId=3, CategoryId=4, ProductName="Basketbol Topu", UnitPrice=60, UnitsInStock=48 },
+                new Product{ ProductId=4, CategoryId=4, ProductName="Çatal bıçak seti", UnitPrice=90, UnitsInStock=18 },
+                new Product{ ProductId=5, CategoryId=8, ProductName="Ütü Masası", UnitPrice=169, UnitsInStock=8 }
             };
         }
 
@@ -61,7 +61,7 @@ namespace DataAccess.Concrete.InMemory
             updateToProduct.ProductName = product.ProductName;
             updateToProduct.CategoryId = product.CategoryId;
             updateToProduct.UnitPrice = product.UnitPrice;
-            updateToProduct.UnitInStock = product.UnitInStock;
+            updateToProduct.UnitsInStock = product.UnitsInStock;
         }
     }
 }
